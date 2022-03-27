@@ -30,7 +30,7 @@ app.get("/", function(req,res){
 app.get("/events",function(req,res){
   res.render("event");
 
-  const url = "https://kontests.net/api/v1/all";
+  const url = "https://codeforces.com/api/";
 
   https.get(url, function(response){
         response.on("data", function(data){
